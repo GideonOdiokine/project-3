@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#bg-container{
+	background-color: coral;
+	width: 100%;
+	min-height: 80vh;
+}
+.header-content{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.header-title{
+	font-size: 35px;
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+	font-variant:small-caps;
+	text-shadow: 0px 5px 10px red;
+}
+.header-subtitle{
+	font-size: 1.5rem;
+	padding-top: 10px;
+	font-family: tahoma;
+	font-variant: small-caps;
+	text-align: center;
+	text-shadow: 0px 4px 10px brown;
+}
+.article-text{
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+}
+.title{
+	font-family: cursive;
+	font-size: 1.5rem;
+	color: #fff;
+	animation-name: toggle;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+}
+.article{
+	width: 100%;
+}
+
+@keyframes toggle{
+   0%{color: blue; font-family: sans-serif;}
+    35%{color: red;}
+     50%{color: pink; font-family: cursive;}
+      75%{color: red;}
+       100%{color: white; font-family: tahoma;}
+}
+.carousel-container{
+	width: 30%;
+	margin:10px auto;
+	overflow: hidden;
+	/* border: 5px solid black; */
+	height:300px;
+	position: relative;
+
+}
+.carousel-users-content{
+	display: flex;
+	flex-direction:column;
+	width: 100%;
+	height: 300px;
+
+}
+.carousel-users-content:first-child{
+	display: none;
+}
+.user-name{
+	padding:8px;
+	text-align:center;
+	font-family: tahoma;
+}
+img{
+	max-width: 100%;
+	height: 80%;
+	width: 300px;
+}
+.btn{
+	display: flex;
+	width: 80%;
+	min-height: 70px;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 111;
+	margin-bottom: 130px;
+	padding: 70px;
+
+}
+button.prev {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    background-color: black;
+    width: 4rem;
+    height: 4rem;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    	top: 100%;
+    cursor: pointer;
+  }
+button.next {
+	top: 100%;
+    position:absolute;
+	 right: 0;
+	 font-size: 20px;
+	    background-color: black;
+    width: 4rem;
+    height: 4rem;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
